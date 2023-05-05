@@ -24,7 +24,7 @@ export class QueueItem {
         mainContainer.classList.add(["next-media", "w-90", "grid", "grid-2-2"]);
 
         let imageContainer = document.createElement("div");
-        imageContainer.classList.add(["icon grid-cs-1", "grid-ce-2", "grid-rs-1", "grid-re-3"])
+        imageContainer.classList.add(["icon", "grid-cs-1", "grid-ce-2", "grid-rs-1", "grid-re-3"])
 
         let image = document.createElement("img");
         image.src = this.image;
@@ -51,6 +51,8 @@ export class QueueItem {
         mainContainer.append(artist);
 
         fragment.appendChild(mainContainer);
+
+        return fragment;
 
       }
 

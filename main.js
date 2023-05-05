@@ -12,14 +12,19 @@ async function main(...args){
 async function loadData(url){
     let obj_list = new Array();
     let res = await fetch(url)
-        .then((result) => result.json()
-        .then((output) => {  output.forEach((item) => (
-            obj_list.push(new QueueItem(item.image, item.title, item.artist)) 
-        ))})
+        .then(
+            (result) => result.json()
+            )
+        .then(
+            (output) => {  
+                output.forEach((item) => (
+                    obj_list.push(new QueueItem(item.image, item.title, item.artist)) 
+                    )
+                )
+            }
         )
-    // let outputJson = await res;
+        
 
-    
     
     return obj_list;
 }
@@ -34,12 +39,10 @@ function logConsoleJSON(json){
 function populateList(selector,data){
     let ul = document.querySelector(selector);
 
-    
-
     data.forEach( (item) => {
         let li = document.createElement("li");
         li.classList.add("q1", "w-100");
-        li.appendChild(item.fragment);
+        li.appendChild(item.fragment());
         ul.appendChild(li);
             
             
