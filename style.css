@@ -1,0 +1,48 @@
+@import url('css/variables.css');
+@import url('css/clear.css');
+@import url('css/dimensions.css');
+@import url('css/flexbox.css');
+@import url('css/grid.css');
+@import url('css/padding.css');
+
+/* 
+  Main CSS begin
+*/
+
+
+.bg-black {
+    background: var(--bg-primary-color);
+}
+
+.block {
+    display: block;
+}
+body{
+    background: #fafafa;
+    font-family: 'Roboto';
+}
+:root div#container {
+    background: #943A2B;
+}
+
+.colc-3{
+    columns: 3;
+}
+
+/* ### padding ### */
+.p-10{
+    padding: 10px;
+}
+.p-50{
+    padding: 50px;
+}
+
+
+
+
+
+/* ------------ */
+
+/* li > div.next-media {
+    b
+} */

@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
-    <body>
-        <div id="container">
-            <div id="preview"></div>
-            <div id="title"></div>
-            <div id="controls">
-                <div id="cnt_prev"></div>
-                <div id="cnt_play" class="play pause"></div>
-                <div id="next"></div>
+    <body class="overf-none">
+        <div id="container" class="vh-100 vw-100 flex flex-d-row flex-jc-center flex-gp-c-10px p-50">
+            <div id="text" class="bg-black flex-gr-2 h-100 ">
+                jeden
             </div>
-            <div id="queue">
+            <div id="center_pane" class="h-100 flex-gr-1 vw-50">
+                dwa
+                <div id="preview"></div>
+                <div id="title"></div>
+                <div id="controls">
+                    <div id="cnt_prev"></div>
+                    <div id="cnt_play" class="play pause"></div>
+                    <div id="next"></div>
+                </div>
+            </div>
+            
+            <div id="queue" class="bg-black flex-gr-2 h-100 ">
+                trzy
                 <ul>
-                    <li class="q1"></li>
-                    <li class="q2"></li>
-                    <li class="q3"></li>
-                    <li class="q4"></li>
-                    <li class="q5"></li>
+                    <li class="q1 w-100">
+                        <div class="next-media w-90 grid grid-2-2">
+                            <div class="icon grid-cs-1 grid-ce-2 grid-rs-1 grid-re-3">
+                                IMAGE
+                            </div>
+                            <div class="title grid-cs-2 grid-ce-3 grid-rs-1 grid-re-2">
+                                RADIOACTIVE
+                            </div>
+                            <div class="artist grid-cs-2 grid-ce-3 grid-rs-2 grid-re-3">
+                                Imaging Dragons
+                            </div>
+                        </div>
+                    </li>
+                    <li class="q2 w-100">
+                        <div class="next-media">
+                            <div class="icon"></div>
+                            <div class="title"></div>
+                            <div class="artist"></div>
+                        </div>
+                    </li>
+                    <li class="q3 w-100">
+                        <div class="next-media">
+                            <div class="icon"></div>
+                            <div class="title"></div>
+                            <div class="artist"></div>
+                        </div>
+                    </li>
+                    <li class="q4 w-100">
+                        <div class="next-media">
+                            <div class="icon"></div>
+                            <div class="title"></div>
+                            <div class="artist"></div>
+                        </div>
+                    </li>
+                    <li class="q5 w-100">
+                        <div class="next-media">
+                            <div class="icon"></div>
+                            <div class="title"></div>
+                            <div class="artist"></div>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div id="text"></div>
+            
         </div>
 
 

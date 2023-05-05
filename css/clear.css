@@ -25,18 +25,3 @@ html {
     max-width: 100%;
     height: auto;
   }
-
-/* 
-  Main CSS begin
-*/
-
-
-body{
-    background: #fafafa;
-}
-:root div#container {
-    background: #943A2B;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-}
