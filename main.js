@@ -39,9 +39,10 @@ function logConsoleJSON(json){
 function populateList(selector,data){
     let ul = document.querySelector(selector);
 
-    data.forEach( (item) => {
+    data.forEach( (item,index,arr) => {
         let li = document.createElement("li");
-        li.classList.add("q1", "w-100");
+        li.classList.add(`q${index}`, "w-100");
+        // li.addEventListener("click",replace_preview,false)
         li.appendChild(item.fragment());
         ul.appendChild(li);
             
@@ -49,4 +50,7 @@ function populateList(selector,data){
         }
         
     )
+}
+function replace_preview(event){
+    console.log(event.srcElement);
 }
