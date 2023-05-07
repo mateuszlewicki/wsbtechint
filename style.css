@@ -4,6 +4,7 @@
 @import url('css/flexbox.css');
 @import url('css/grid.css');
 @import url('css/padding.css');
+@import url('css/margin.css');
 
 /* 
   Main CSS begin
@@ -16,6 +17,9 @@
 
 .block {
     display: block;
+}
+.none {
+    display: none;
 }
 body{
     background: #fafafa;
@@ -30,28 +34,7 @@ body{
 }
 
 /* ### padding ### */
-.p-10{
-    padding: 10px;
-}
-.p-50{
-    padding: 50px;
-}
-.mb-5{
-    margin-bottom: 5px;
-}
-.mb-10{
-    margin-bottom: 10px;
-}
-.mb-15{
-    margin-bottom: 15px;
-}
-.mb-20{
-    margin-bottom: 20px;
-}
 
-.mb-25{
-    margin-bottom: 25px;
-}
 
 
 div.icon > img {
@@ -78,9 +61,30 @@ div#queue > ul > li:active {
 }
 
 div#queue {
-    overflow-y: hidden;
-    border-radius: 5px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border-radius: 15px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 div.title > p {
     font-weight:bold ;
@@ -94,12 +98,27 @@ div.artist {
     align-self: start;
 }
 div.artist > p {
-    
+    font-size: 24px;
+}
+/**/
+div#center_pane {
+    color: #fafafa;
+}
+div#title > p {
+    font-weight:bold ;
+    font-size: 32px;
+}
+div#artist {
+    align-self: center;
+}
+div#artist > p {
     font-size: 24px;
 }
 
-/* ------------ */
+.acenter{
+    align-self: center;
+}
 
-/* li > div.next-media {
-    b
-} */
+.active { 
+    background-color: #63332b;
+}
