@@ -6,13 +6,13 @@
     </head>
     <body class="overf-none">
         <div id="container" class="vh-100 vw-100 flex flex-d-row flex-jc-center flex-gp-c-10px p-50">
-            <div id="text" class="bg-black flex-gr-2 h-100 ">
-            </div>
-            <div id="center_pane" class="h-100 flex-gr-1 vw-50">
-                <div id="preview"><img/></div>
-                <div id="title"><p></p></div>
-                <div id="artist"><p></p></div>
-                <div id="controls">
+            <!-- <div id="text" class="bg-black flex-gr-2 h-100 "></div> -->
+            <div id="center_pane" class="h-100 flex-gr-1 vw-50 flex acenter" style="align-content: center;flex-direction: column ;justify-content: center;">
+                <div id="preview" class="acenter"><img src="https://picsum.photos/256"/></div>
+                <div id="title" class="acenter"><p>Click on song on the left</p></div>
+                <div id="artist" class="acenter"><p>to select and play</p></div>
+                <div id="controls" class="acenter" >
+                    <audio id="player" controls ><source></source></audio>
                     <div id="cnt_prev"></div>
                     <div id="cnt_play" class="play pause"></div>
                     <div id="next"></div>
