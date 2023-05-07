@@ -2,52 +2,62 @@
     {
       "image": "https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/66/6c/d8/666cd8db-890e-7e03-8b68-8976fbf6ba1e/14DMGIM05549.rgb.jpg/1200x1200bb.jpg",
       "title": "Bohemian Rhapsody",
-      "artist": "Queen"
+      "artist": "Queen",
+      "songURL":"files/bohemian.mp3"
     },
     {
       "image": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/b2/01/ac/b201ac0a-d696-7e94-9133-5d0160adb847/075596059527.jpg/1200x1200bb.jpg",
       "title": "Hotel California",
-      "artist": "Eagles"
+      "artist": "Eagles",
+      "songURL":"files/hotelcalifornia.mp3"
     },
     {
       "image": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/5c/15/9b/5c159b27-95ca-b9a7-84e3-28e795fffd39/dj.kvkrpptq.jpg/1200x630wp-60.jpg",
       "title": "Stairway to Heaven",
-      "artist": "Led Zeppelin"
+      "artist": "Led Zeppelin",
+      "songURL":"files/stairwaytoheaven.mp3"
     },
     {
       "image": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/56/47/b7/5647b700-6b9d-9e72-ec9f-51140b6d4492/00602567673781.rgb.jpg/600x600bf-60.jpg",
       "title": "Sweet Child O' Mine",
-      "artist": "Guns N' Roses"
+      "artist": "Guns N' Roses",
+      "songURL":"files/sweetchildofmine.mp3"
     },
     {
       "image": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/18/93/db/1893db5c-ddd1-b95c-3112-b9b83bcceab0/0093624986553.jpg/1200x1200bf-60.jpg",
       "title": "Enter Sandman",
-      "artist": "Metallica"
+      "artist": "Metallica",
+      "songURL":"files/entersandman.mp3"
     },
     {
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/51/d8/a9/51d8a94b-311b-db29-af0e-44dff1351b48/18UMGIM51037.rgb.jpg/1200x1200bb.jpg",
       "title": "Imagine",
-      "artist": "John Lennon"
+      "artist": "John Lennon",
+      "songURL":"files/imagine.mp3"
     },
     {
       "image": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/95/fd/b9/95fdb9b2-6d2b-92a6-97f2-51c1a6d77f1a/00602527874609.rgb.jpg/1200x1200bb.jpg",
       "title": "Smells Like Teen Spirit",
-      "artist": "Nirvana"
+      "artist": "Nirvana",
+      "songURL":"files/teenspirit.mp3"
     },
     {
       "image": "https://is5-ssl.mzstatic.com/image/thumb/Music126/v4/b9/c8/ef/b9c8ef42-bbc9-64df-11f8-717571f6730f/886443673458.jpg/600x600bf-60.jpg",
       "title": "Highway to Hell",
-      "artist": "AC/DC"
+      "artist": "AC/DC",
+      "songURL":"/files/.mp3"
     },
     {
       "image": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/1e/14/58/1e145814-281a-58e0-3ab1-145f5d1af421/886443673441.jpg/600x600bf-60.jpg",
       "title": "Back in Black",
-      "artist": "AC/DC"
+      "artist": "AC/DC",
+      "songURL":"files/backinblack.mp3"
     },
     {
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/bb/a2/f0/bba2f0d7-4d9e-c617-d49e-3ae02fd5d440/dj.xbkfgllk.jpg/1200x1200bf-60.jpg",
       "title": "Thunderstruck",
-      "artist": "AC/DC"
+      "artist": "AC/DC",
+      "songURL":"files/thunderstruck.mp3"
     }
   ]
   

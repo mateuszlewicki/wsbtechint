@@ -1,8 +1,9 @@
 export class QueueItem {
-    constructor(image, title, artist) {
+    constructor(image, title, artist, songURL) {
       this.image = image;
       this.title = title;
       this.artist = artist;
+      this.songURL = songURL;
     }
     fragment() {
         let fragment = new DocumentFragment();
@@ -32,10 +33,14 @@ export class QueueItem {
         artist.textContent = this.artist;
         artistContainer.appendChild(artist);
 
+        let filepath = document.createElement("p");
+        filepath.classList.add("none","filepath");
+        filepath.textContent = this.songURL;
 
         mainContainer.append(imageContainer);
         mainContainer.append(titleContainer);
         mainContainer.append(artistContainer);
+        mainContainer.append(filepath);
         mainContainer.addEventListener("click",this.onClick,false)
 
         fragment.appendChild(mainContainer);
@@ -48,8 +53,19 @@ export class QueueItem {
         let previewImage = document.querySelector("div#preview>img");
         let previewTitle = document.querySelector("div#title>p");
         let previewArtist =  document.querySelector("div#artist>p");
-        preview.src=this.querySelector(".icon > img").src;
+        let player =  document.querySelector("#player>source");
+        let active = document.querySelector("div#queue > ul > li > div.active")
+
         
+        previewImage.src=this.querySelector(".icon > img").src;
+        previewTitle.textContent = this.querySelector(".title > p").textContent;
+        previewArtist.textContent = this.querySelector(".artist > p").textContent;
+        player.src = this.querySelector("p.filepath").textContent;
+        try {
+            active.classList.remove("active");
+        }
+        catch (e) {}
+        this.classList.add("active");
       }
 
     }

@@ -18,14 +18,13 @@ async function loadData(url){
         .then(
             (output) => {  
                 output.forEach((item) => (
-                    obj_list.push(new QueueItem(item.image, item.title, item.artist)) 
+                    obj_list.push(new QueueItem(item.image, item.title, item.artist, item.songURL)) 
                     )
                 )
             }
         )
         
 
-    
     return obj_list;
 }
 
@@ -48,7 +47,6 @@ function populateList(selector,data){
             
             
         }
-        
     )
 }
 function replace_preview(event){
